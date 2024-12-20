@@ -1,6 +1,6 @@
 from django import forms
 from django.forms import ModelForm
-from  .models import *
+from  .models import Tasks
 
 class TaskForm(forms.ModelForm):
     title = forms.CharField(widget=forms.TextInput(attrs={'placeholder':'Add a new task...'}))
